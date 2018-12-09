@@ -1,3 +1,15 @@
-<p>
-  event-list works!
-</p>
+<h1>Events</h1>
+
+<ul *ngIf="events">
+  <li *ngFor="let event of events.data">
+
+    <!--  <img [src]="event.avatar">
+      <p>{{ event.first_name }} {{ event.last_name }}</p> -->
+     
+
+     <p>{{ event.startTime }} {{event.endTime}} {{event.date}} {{ event.title }} {{ event.description}}</p>
+     <!-- <p>{{ event.title }} {{ event.description}}</p> -->
+
+  </li>
+
+</ul>
