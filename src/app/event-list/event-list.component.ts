@@ -10,6 +10,20 @@ export class EventListComponent implements OnInit {
 
   events: Object;
 
+  step = 0;
+
+  setStep(index: number) {
+    this.step = index;
+  }
+
+  editEvent() {
+    this.step++;
+  }
+
+  /*deleteEvent() {
+    this.step--;
+  }*/
+
   constructor(private data: DataService) { }
 
   ngOnInit() {
