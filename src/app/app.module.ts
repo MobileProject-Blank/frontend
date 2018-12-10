@@ -9,9 +9,12 @@ import { CalendarComponent } from './calendar/calendar.component';
 import { EventListComponent } from './event-list/event-list.component';
 import { CreateModalComponent } from './create-modal/create-modal.component';
 import { WarnModalComponent } from './warn-modal/warn-modal.component';
+<<<<<<< HEAD
 import { EventsComponent } from './events/events.component';
 import { NewComponent } from './new/new.component';
 import { GuidelinesComponent } from './guidelines/guidelines.component';
+=======
+>>>>>>> 71f3b86cdd819bdf11f39a522cdf59db541c47ba
 
 @NgModule({
   declarations: [
@@ -20,10 +23,14 @@ import { GuidelinesComponent } from './guidelines/guidelines.component';
     CalendarComponent,
     EventListComponent,
     CreateModalComponent,
+<<<<<<< HEAD
     WarnModalComponent,
     EventsComponent,
     NewComponent,
     GuidelinesComponent
+=======
+    WarnModalComponent
+>>>>>>> 71f3b86cdd819bdf11f39a522cdf59db541c47ba
   ],
   imports: [
     BrowserModule,
