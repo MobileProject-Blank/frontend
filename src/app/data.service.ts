@@ -12,8 +12,8 @@ export class DataService {
     return this.http.get('http://localhost:8080/api/events')
   }
 
-  createEvent() {
-    
+  deleteEvent() {
+    return this.http.delete('http://localhost:8080/api/events/:id')
   }
 
 }

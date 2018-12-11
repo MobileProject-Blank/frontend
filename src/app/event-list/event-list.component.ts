@@ -16,13 +16,11 @@ export class EventListComponent implements OnInit {
     this.step = index;
   }
 
-  editEvent() {
-    this.step++;
+  delete() {
+    this.data.deleteEvent().subscribe( data => {
+      this.events = data
+    })
   }
-
-  /*deleteEvent() {
-    this.step--;
-  }*/
 
   constructor(private data: DataService) { }
 
