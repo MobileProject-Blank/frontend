@@ -15,9 +15,10 @@ import { GuidelinesComponent } from './guidelines/guidelines.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {MatNativeDateModule, MatFormFieldModule, MatIconModule} from '@angular/material';
+import {MatNativeDateModule, MatFormFieldModule, MatIconModule, MatInputModule} from '@angular/material';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import { CreateComponent } from './create/create.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     WarnModalComponent,
     EventsComponent,
     NewComponent,
-    GuidelinesComponent
+    GuidelinesComponent,
+    CreateComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +44,8 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     MatNativeDateModule,
     MatDatepickerModule,
     MatFormFieldModule,
-    MatIconModule
+    MatIconModule,
+    MatInputModule
   ],
   exports: [
     BrowserModule,

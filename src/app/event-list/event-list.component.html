@@ -1,42 +1,30 @@
 <h1>Events</h1>
 
+<div class="mat-elevation-z8">
 <mat-accordion class="example-headers-align" *ngIf="events">
 
-    <mat-expansion-panel hideToggle *ngFor="let event of events.data">
-      <mat-expansion-panel-header>
-          <mat-panel-title id="eventDate">
-              {{event.date}}
-            </mat-panel-title>
-          <mat-panel-title id="eventStart">
-              {{event.startTime}} - {{event.endTime}}
-          </mat-panel-title>
-        <mat-panel-description id="eventTitle">
-          {{event.title}}
-          <mat-icon>date_range</mat-icon>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
+  <mat-expansion-panel hideToggle *ngFor="let event of events.data">
+    <mat-expansion-panel-header>
+      <mat-panel-title id="eventDate">
+        {{event.date}}
+      </mat-panel-title>
+      <mat-panel-title id="eventStart">
+        {{event.startTime}} - {{event.endTime}}
+      </mat-panel-title>
+      <mat-panel-description id="eventTitle">
+        {{event.title}}
+        <mat-icon>date_range</mat-icon>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
 
-      <p>{{event.description}}</p>
-  
-      <mat-action-row>
-        <button mat-button color="warn" (click)="prevStep()">Edit</button>
-        <button mat-button color="primary" (click)="nextStep()">Delete</button>
-      </mat-action-row>
-    </mat-expansion-panel>
-  
-  </mat-accordion>
+    <p>{{event.description}}</p>
 
+    <mat-action-row>
+      <button mat-button color="primary">Subscripe</button>
+      <button mat-button color="primary">Edit</button>
+      <button mat-button color="warn" (click)="delete()">Delete</button>
+    </mat-action-row>
+  </mat-expansion-panel>
 
-<!-- <ul *ngIf="events">
-  <li *ngFor="let event of events.data">
-
-    <img [src]="event.avatar">
-      <p>{{ event.first_name }} {{ event.last_name }}</p>
-     
-
-     <p>{{ event.startTime }} {{event.endTime}} {{event.date}} {{ event.title }} {{ event.description}}</p>
-     <p>{{ event.title }} {{ event.description}}</p>
-
-  </li>
-
-</ul> -->
+</mat-accordion>
+</div>
