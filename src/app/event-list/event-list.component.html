@@ -19,24 +19,12 @@
       <p>{{event.description}}</p>
   
       <mat-action-row>
-        <button mat-button color="warn" (click)="prevStep()">Edit</button>
-        <button mat-button color="primary" (click)="nextStep()">Delete</button>
+        <button mat-button color="primary" (click)="nextStep()">Subscripe</button>
+        <button mat-button color="primary" (click)="nextStep()">Edit</button>
+        <button mat-button color="warn" (click)="prevStep()">Delete</button>
       </mat-action-row>
     </mat-expansion-panel>
   
   </mat-accordion>
 
 
-<!-- <ul *ngIf="events">
-  <li *ngFor="let event of events.data">
-
-    <img [src]="event.avatar">
-      <p>{{ event.first_name }} {{ event.last_name }}</p>
-     
-
-     <p>{{ event.startTime }} {{event.endTime}} {{event.date}} {{ event.title }} {{ event.description}}</p>
-     <p>{{ event.title }} {{ event.description}}</p>
-
-  </li>
-
-</ul> -->

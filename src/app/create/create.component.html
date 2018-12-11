@@ -1,0 +1,57 @@
+<h1>Create an Event</h1>
+
+<form [formGroup]="eventForm" (ngSubmit)="onSubmit()">
+
+  <h5 *ngIf="success"> New event created</h5>
+
+  <label>
+    Title*:
+    <input type="text" formControlName="title" placeholder="Event title">
+    <div *ngIf="submitted && eventForm.controls.title.errors" class="error">
+      <div *ngIf="eventForm.controls.title.errors.required">
+        Event title is required
+      </div>
+    </div>
+  </label>
+
+  <label>
+    Date*:
+    <input type="text" formControlName="date" placeholder="dd.mm.yyyy">
+    <div *ngIf="submitted && eventForm.controls.date.errors" class="error">
+      <div *ngIf="eventForm.controls.date.errors.required">
+        Date of the event is required
+      </div>
+    </div>
+  </label>
+
+  <label>
+    Start time:
+    <div>
+      <div>
+
+      </div>
+    </div>
+  </label>
+
+  <label>
+      End time:
+      <div>
+        <div>
+          
+        </div>
+      </div>
+    </label>
+
+  <label>
+    Description*:
+    <textarea formControlName="description" cols="30" rows="10" placeholder="lorem ipsum"></textarea>
+    <div *ngIf="submitted && eventForm.controls.description.errors" class="error">
+      <div *ngIf="eventForm.controls.description.errors.required">
+        Description is required
+      </div>
+    </div>
+  </label>
+
+  <button type="submit" [disabled]="!eventForm.valid">Create New Event</button>
+
+</form>
