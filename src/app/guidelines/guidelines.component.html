@@ -5,14 +5,16 @@
 <p>Due to this company being global we would recommend people to communicate in English.</p>
 <p>In the channels you are free to use the language you prefer, but consider writing a summary of the theme in English.</p>
     
-<h3>Tags for events</h3> 
-<p>These tags are meant to be used when posting an event:</p>   
-<p>- Marketing</p>
+<h3 *ngIf="tags">Tags for events</h3> 
+<p>These tags are meant to be used when posting an event:</p>
+<p  *ngFor="let tag of tags.data">- {{tag.name}}</p>
+
+<!-- <p>- Marketing</p>
 <p>- Developers</p>
 <p>- Global</p>    
 <p>- Healthcare</p>
 <p>- Coffee brake</p>
 <p>- Freetime</p>
-<p>- Guild</p>
+<p>- Guild</p> -->
 
 <h3>Other:</h3>

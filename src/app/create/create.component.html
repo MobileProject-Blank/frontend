@@ -6,7 +6,7 @@
 
   <label>
     Title*:
-    <input type="text" formControlName="title" placeholder="Event title">
+    <input type="text" formControlName="title" placeholder="Example event">
     <div *ngIf="submitted && eventForm.controls.title.errors" class="error">
       <div *ngIf="eventForm.controls.title.errors.required">
         Event title is required
@@ -34,13 +34,13 @@
   </label>
 
   <label>
-      End time:
+    End time:
+    <div>
       <div>
-        <div>
-          
-        </div>
+
       </div>
-    </label>
+    </div>
+  </label>
 
   <label>
     Description*:
@@ -52,6 +52,19 @@
     </div>
   </label>
 
+  Tag:
+  <mat-form-field>
+    <select matNativeControl required formControlName="tag">
+      <option value="marketing">Marketing</option>
+      <option value="developers">Developers</option>
+      <option value="global">Global</option>
+      <option value="healthcare">Healthcare</option>
+      <option value="coffeebrake">Cofee brake</option>
+      <option value="freetime">Freetime</option>
+      <option value="guild">Guild</option>
+    </select>
+  </mat-form-field>
+  <p></p>
   <button type="submit" [disabled]="!eventForm.valid">Create New Event</button>
 
 </form>

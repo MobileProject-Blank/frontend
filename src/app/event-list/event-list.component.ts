@@ -10,18 +10,6 @@ export class EventListComponent implements OnInit {
 
   events: Object;
 
-  step = 0;
-
-  setStep(index: number) {
-    this.step = index;
-  }
-
-  delete() {
-    this.data.deleteEvent().subscribe( data => {
-      this.events = data
-    })
-  }
-
   constructor(private data: DataService) { }
 
   ngOnInit() {

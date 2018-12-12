@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {DataService} from '../data.service';
 
 @Component({
   selector: 'app-guidelines',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GuidelinesComponent implements OnInit {
 
-  constructor() { }
+  tags: Object;
+
+  constructor(private data: DataService) { }
 
   ngOnInit() {
+    this.data.getTags().subscribe( data => {
+      this.tags = data
+      console.log(this.tags)
+    })
   }
 
 }

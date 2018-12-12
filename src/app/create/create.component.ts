@@ -20,7 +20,8 @@ export class CreateComponent implements OnInit {
       date: ['', Validators.required],
       description: ['', Validators.required],
       startTime: [''],
-      endTime: ['']
+      endTime: [''],
+      tag: ['', Validators.required]
     })
   }
 
