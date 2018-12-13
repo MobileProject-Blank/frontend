@@ -29,6 +29,7 @@ ng serve
 # Further development ideas:
 - responsive navbar
 - created events get saved in the backend
+- alert when event is created
 - in the events page a calendar to show the upcoming events
 - the edit, delete and subscribe buttons to work
 - make website responsive
