@@ -11,5 +11,4 @@ export class NewComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }

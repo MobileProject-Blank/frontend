@@ -12,12 +12,12 @@ import { EventsComponent } from './events/events.component';
 import { NewComponent } from './new/new.component';
 import { GuidelinesComponent } from './guidelines/guidelines.component';
 
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatExpansionModule} from '@angular/material/expansion';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {MatNativeDateModule, MatFormFieldModule, MatIconModule, MatInputModule} from '@angular/material';
-import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
-import {MatDatepickerModule} from '@angular/material/datepicker';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatNativeDateModule, MatFormFieldModule, MatIconModule, MatInputModule } from '@angular/material';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 import { CreateComponent } from './create/create.component';
 
 @NgModule({
@@ -39,7 +39,7 @@ import { CreateComponent } from './create/create.component';
     HttpClientModule,
     BrowserAnimationsModule,
     MatExpansionModule,
-    FormsModule, 
+    FormsModule,
     ReactiveFormsModule,
     MatNativeDateModule,
     MatDatepickerModule,
@@ -53,7 +53,7 @@ import { CreateComponent } from './create/create.component';
     HttpClientModule,
     BrowserAnimationsModule,
     MatExpansionModule,
-    FormsModule, 
+    FormsModule,
     ReactiveFormsModule,
     MatNativeDateModule,
     MatDatepickerModule,

@@ -28,12 +28,11 @@ export class CreateComponent implements OnInit {
   onSubmit() {
     this.submitted = true;
 
-    if(this.eventForm.invalid) {
+    if (this.eventForm.invalid) {
       return;
     }
 
     this.success = true;
     console.log(this.eventForm.value);
   }
-
 }

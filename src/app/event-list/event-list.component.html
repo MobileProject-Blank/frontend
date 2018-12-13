@@ -7,7 +7,6 @@
 <div class="mat-elevation-z8">
   <mat-accordion class="example-headers-align" *ngIf="events">
 
-
     <mat-expansion-panel hideToggle *ngFor="let event of events.data">
       <mat-expansion-panel-header>
         <mat-panel-title id="eventDate">
@@ -25,7 +24,7 @@
       <p>{{event.description}}</p>
 
       <mat-action-row>
-        <button mat-button color="primary">Subscripe</button>
+        <button mat-button color="primary">Subscribe</button>
         <button mat-button color="primary">Edit</button>
         <button mat-button color="warn">Delete</button>
       </mat-action-row>
